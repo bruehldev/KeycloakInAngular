@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  baseUrl: 'http://localhost:4200',
+  production: false,
+  apiUrl: 'http://127.0.0.1:8080/keycloak-auth-api/rest',
+
+  keycloakRealm: 'keycloak-auth',
+  keycloakClient: 'auth-client',
+  keycloakBaseUrl: 'http://127.0.0.1:8080/'
 };
 
 /*
