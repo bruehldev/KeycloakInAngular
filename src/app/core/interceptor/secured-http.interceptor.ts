@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpHandler, HttpRequest, HttpEvent, HttpResponse } from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import 'rxjs/add/operator/do';
 
-import { KeycloakService } from 'app/core/auth/keycloak.service';
+import { KeycloakService } from '../auth/keycloak.service';
 
 @Injectable()
 export class SecuredHttpInterceptor implements HttpInterceptor {

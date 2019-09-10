@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Route, Router, RouterStateSnapshot, ActivatedRouteSnapshot, CanActivate, CanLoad } from '@angular/router';
 
-import { PermissionGuard } from 'app/core/model/permission-guard';
-import { KeycloakService } from 'app/core/auth/keycloak.service';
+import { PermissionGuard } from '../model/permission-guard';
+import { KeycloakService } from '../auth/keycloak.service';
 
 @Injectable()
 export class AuthGuardService implements CanActivate, CanLoad {

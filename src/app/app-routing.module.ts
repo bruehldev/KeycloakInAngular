@@ -15,7 +15,7 @@ export const routes: Routes = [
 	{
 		path: 'secured-by-role',
 		canLoad: [AuthGuard],
-		loadChildren: 'app/secured-by-role/secured-by-role.module#SecuredByRoleModule',
+		loadChildren: './secured-by-role/secured-by-role.module#SecuredByRoleModule',
 		data: {
 			Permission: {
 				Role: 'AppRole',
@@ -26,7 +26,7 @@ export const routes: Routes = [
 	{
 		path: 'secured-by-group',
 		canLoad: [AuthGuard],
-		loadChildren: 'app/secured-by-group/secured-by-group.module#SecuredByGroupModule',
+		loadChildren: './secured-by-group/secured-by-group.module#SecuredByGroupModule',
 		data: {
 			Permission: {
 				Only: ['User'],
