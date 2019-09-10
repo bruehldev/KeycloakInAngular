@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Notes
+
+  - Keycloak is injected and initialized at main.ts.
+  - keycloakRealm and keycloakBaseUrl must be set in src/environments/environment.ts.
+  - src/assets/keycloak.json, is where we defined the keycloak client configuration.
+  
+*Make sure that keycloak is running before running this app on ng serve. This project is calling keycloak from port 8380, you may want to change that to 8080 if you deploy keycloak as default (src/environments/environment.ts).
